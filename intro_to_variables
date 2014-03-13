@@ -1,0 +1,40 @@
+#Variables
+#variables are used to store data in memory.
+#Variables are nothing but reserved memory locations to store values.
+#Python variables do not have to be explicitly declared 
+
+#Programmer: Ankan Basu, PG, CPG, Hydrogeologist
+#Website: CoalGeology.Com
+
+#Moh's Scale: You can store the hardness of each mineral using python for later use.
+talc=1
+gypsum=2
+calcite=3
+fluorite=4
+apatite=5
+orthoclase=6
+quartz=7
+topaz=8
+corundum=9
+diamond=10
+
+#look up later:
+print("The hardness of quartz is ",quartz)
+#--The hardness of quartz is  7
+
+
+#you can also store strings.
+mineral1="gypsum"
+mineral2="pytite"
+print(mineral1+mineral2)
+#-->gypsumpytite 
+#+ operator is the concatenate operator here.
+print(talc+diamond)
+#-->11
+
+#Multiple variable declaration:
+(garnet,density)=("garnet",3.2)
+print(garnet)
+#-->garnet
+print(density)
+#-->3.2
