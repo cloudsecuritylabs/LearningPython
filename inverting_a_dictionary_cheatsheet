@@ -1,0 +1,37 @@
+#Ankan Basu, PG, CPG, HYdrogeologist
+#Website: www.coalgeology.coom
+#Inverting a dictionary
+#using dictionary as an accumulator
+
+fruit_to_color={
+    'banana':'yellow',
+    'cherry':'red',
+    'orange':'orange',
+    'pear':'green',
+    'peach':'orange',
+    'plum':'purple',
+    'pomegranate':'red',
+    'strawbery':'red'}
+
+print(fruit_to_color)
+print(fruit_to_color['banana'])
+
+for fruit in fruit_to_color:
+    print (fruit,fruit_to_color[fruit])
+
+
+# Invert fruit_to_color
+
+color_to_fruit={}
+
+for fruit in fruit_to_color:
+    color=fruit_to_color[fruit]
+    # If color is not already a key in the accumulator,
+    #add color:[fruit] as an entry
+    if not (color in color_to_fruit):
+        color_to_fruit[color]=[fruit]
+    #otherwise, append fruit to the existing list
+    else:
+        color_to_fruit[color].append(fruit)
+
+print(color_to_fruit)
