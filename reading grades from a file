@@ -1,0 +1,30 @@
+def read_grades(gradefile):
+    '''(file open for reading) -> list of float
+
+    Read and return the list of grades in gradefile.
+   
+    Precondition: gradefile starts with a header that contains
+    no blank lines, then has a blank line, and then lines
+    containing a student number and a grade.
+    '''
+
+    # Skip over the header.
+    line = gradefile.readline()
+    while line != '\n':
+        line = gradefile.readline()
+
+    # Read the grades, accumulating them into a list.
+
+    grades = []
+    
+    line = gradefile.readline()
+    while line != '':
+        # Now we have s string containing the info for a
+        # single student.
+        # Find the last space and take everything after that
+        # space.
+        grade = line[line.rfind(' ') + 1:]
+        grades.append(float(grade))
+        line = gradefile.readline()
+
+    return grades
