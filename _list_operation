@@ -1,0 +1,12 @@
+# List Operation Example
+# Programmer: Ankan Basu, PG, CPG, HYdrogeologist/Geochemist
+# Website: www.coalgeology.com
+
+L=[['A', 'N', 'T', 'T'], ['X', 'S', 'O', 'B']]
+L1=[]
+for items in L:
+    chars=''
+    for char in items:
+        chars=chars+char
+    L1.append(chars)
+print (L1)        
