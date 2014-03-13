@@ -1,0 +1,17 @@
+#Ankan Basu, PG, CPG, Hydrogeologist
+#input_example.py
+
+name = input("What is your name? ")
+city = input("What city do you live in? ")
+state = input("What state is that in? ")
+
+print ("Hello there! It is so great to meet you,")
+# One way to do this is to print strings on separate lines
+print (name)
+print ("from")
+print (city)
+print (state)
+
+# We can also "glue together" pieces of a string by adding commas
+#  between them.
+print (name, "from", city, state)
