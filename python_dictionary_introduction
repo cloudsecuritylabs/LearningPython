@@ -1,0 +1,36 @@
+grades=[['A1',80],['A2',70],['A3',90]]
+for items in grades:
+    print (items)
+
+ans_to_grades={'A1':80,'A2':70,'A3':90}
+#dict with three value pairs - A1, A2, A3
+#value is the number associates with the keys
+#Keys must be unique
+#Different keys may have the same value.
+
+print (ans_to_grades['A2'])
+#print (ans_to_grades['A4']) # will produce an error.
+print ('A4' in ans_to_grades)
+ans_to_grades['A4']=65 # notice how to add element.
+print (ans_to_grades)
+
+ans_to_grades['A4']=90 # notice how to add element.
+print (ans_to_grades)
+
+del ans_to_grades['A1']
+print (ans_to_grades)
+
+# Dictionary is not ordered.
+for assignment in ans_to_grades:
+    print (assignment)
+
+
+for assignment in ans_to_grades:
+    print (assignment,ans_to_grades[assignment])
+
+
+#Key could be int or string, but cannot be a list, as list is mutable.
+#However, a tuple can be used as the ney for a dictionary as tuples are immutable
+d={}
+d[(3,4)]=33
+print(d)
