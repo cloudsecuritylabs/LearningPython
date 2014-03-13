@@ -1,0 +1,34 @@
+mynumbervariable=100
+print(mynumbervariable)
+#-->100
+
+myfloatvar=100.22
+print(myfloatvar)
+#-->100.22
+
+#delete myfloatvar
+del myfloatvar
+
+#print(myfloatvar)
+#-->Error
+
+#Long integer
+longvar=53513362984333
+print(longvar)
+#-->53513362984333
+
+#float variables
+afloat=1.1
+bfloat=-13.5
+cfloat=88.9965
+dfloat=3.3e10
+efloat=3.3e-10
+
+print(afloat,bfloat,cfloat,dfloat,efloat)
+print(dfloat/efloat)
+
+
+#Complex Numbers
+acomplex=1-2j
+print(acomplex.real, acomplex.imag)
+print(acomplex**2)
