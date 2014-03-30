@@ -1,0 +1,12 @@
+import math
+
+class Parea:
+    def __init__(self,nsides,nlength):
+        self.nsides=nsides
+        self.nlength=nlength
+
+    def area(self):
+        return ((1/4)* self.nsides*  self.nlength**2) / math.tan(math.pi/self.nsides)
+
+p1=Parea(5,7)
+print(p1.area())
