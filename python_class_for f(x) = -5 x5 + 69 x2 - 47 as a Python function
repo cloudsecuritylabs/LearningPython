@@ -1,0 +1,33 @@
+#Implement the mathematical function
+#f(x) = -5 x5 + 69 x2 - 47 as a Python function.
+#Then use Python to compute the function values
+#f(0), f(1), f(2), and f(3).
+#Enter the maximum of these four numbers
+
+class fx:
+    def __init__(self,x):
+        self.x=x
+    def __str__(self):
+        return ("You are MR.",str(self.x))
+
+    def cl(self):
+        #f(x) = -5 x5 + 69 x2 - 47
+        self.a=-5*self.x**5+69*self.x**2-47
+        print(self.a, "for", self.x)
+
+
+a=fx(0)
+a.cl()
+
+a=fx(1)
+a.cl()
+
+a=fx(2)
+a.cl()
+
+a=fx()
+a.cl()
+
+
+
+
