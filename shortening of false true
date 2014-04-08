@@ -1,0 +1,54 @@
+def r(p, q):
+    if p == False:
+        return False
+    elif q == False:
+        return False
+    else:
+        return True
+    
+print r(True, False)    
+print r(False, False)
+print r(True,True)
+
+print "--------"
+def r4(p,q):
+    return q and p
+print r4(True, False)    
+print r4(False, False)
+print r4(True,True)
+
+
+print "--------"
+def r3(p,q):
+    return (not p) or (not q)
+print r3(True, False)    
+print r3(False, False)
+print r3(True,True)
+
+
+
+ 
+print "--------"
+def r2(p,q):
+    return p and (not q)
+print r2(True, False)    
+print r2(False, False)
+print r2(True,True)
+
+print "--------"
+def r1(p,q):
+    return (not p) and (not q)
+print r1(True, False)    
+print r1(False, False)
+print r(True,True)
+
+
+def volume_cube(side):
+    """ Returns the volume of a cube, given the length of its side. """
+    return side ** 3
+
+s = 5
+print "The volume of a cube with sides", s, "long is", volume_cube(s), "."
+
+
+
