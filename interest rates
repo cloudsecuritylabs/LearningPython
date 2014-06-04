@@ -1,0 +1,56 @@
+#Program to calculate simple and compound interest rates.
+#Programmer: Ankan Basu, PG
+#Email: basu.ankan@gmail.com
+#program in python
+
+#r= interest rate
+#n=number of years
+#A0=Principal Amount
+#m=number of periods per year
+#k=number of periods
+
+
+print("Simple Interest")
+
+#The first program calculates the most basic final value for simple interest
+def s_value(r,n,A0):
+    val=(1+r*n)*A0
+    return round(val,2)
+
+#Check
+print("1% interst for 1 year with 100 dollar would increase to:")
+print(s_value(0.01,1,100))
+print("#7% interst for 1 year with 100 dollar would increase to:")
+print(s_value(.07,1,100))
+print("1% interst for 5 year with 100 dollar would increase to:")
+print(s_value(0.01,5,100))
+print("#7% interst for 5 year with 100 dollar would increase to:")
+print(s_value(.07,5,100))
+    
+
+
+print("Compound Interest")
+
+#The first program calculates the most basic final value for simple interest
+def c_value(r,n,A0):
+    val=((1+r)**n)*A0
+    return round(val,2)
+
+#Check
+print("1% interst for 1 year with 100 dollar would increase to:")
+print(c_value(0.01,1,100))
+print("#7% interst for 1 year with 100 dollar would increase to:")
+print(c_value(.07,1,100))
+print("1% interst for 5 year with 100 dollar would increase to:")
+print(c_value(0.01,5,100))
+print("#7% interst for 5 year with 100 dollar would increase to:")
+print(c_value(.07,5,100))
+
+
+print("Compound Interest at various intervals")
+#The first program calculates the most basic final value for simple interest
+def cv_value(r,m,k,A0):
+    val=((1+r/m)**k)*A0
+    return round(val,2)
+print("#7% interst for 5 year (60 periods) at 12 periods/year with 100 dollar would increase to:")
+print(cv_value(.07,12,60,100))
